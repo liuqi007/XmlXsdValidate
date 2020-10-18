@@ -71,7 +71,7 @@ public class XsdValidateXmlUtil {
     }
 
     public static void main(String[] args) {
-        xmlStringValidate("d://workspace.xml", "d://test.xsd");
-//        xmlStringValidate("d://test.xml", "d://test.xsd");
+//        xmlStringValidate("d://workspace.xml", "d://test.xsd");
+        xmlStringValidate("d://test.xml", "d://test.xsd");
     }
 }

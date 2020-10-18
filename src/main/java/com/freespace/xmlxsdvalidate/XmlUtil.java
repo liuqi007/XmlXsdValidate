@@ -19,9 +19,9 @@ public class XmlUtil {
     private final static int ERROR_READING_SCHEMA = 2;
     private final static int ERROR_READING_XML = 3;
 
-    private static String mXSDFile = "test.xsd";
-    private static String mXMLFileError = "test_error.xml";
-    private static String mXMLFile = "test.xml";
+    private static String mXSDFile = "D://test.xsd";
+    private static String mXMLFileError = "D://test_error.xml";
+    private static String mXMLFile = "D://test.xml";
     public static void main(String[] args) {
         SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
 

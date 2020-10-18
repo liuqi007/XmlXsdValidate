@@ -44,11 +44,10 @@ public class XmlUtils {
         B2CReq bq = new B2CReq();
         bq.setMerId("s");
         bq.setOrderNo("s");
-        bq.setOrderAmt("1.00");
+        bq.setOrderAmt("1.011");
         //bq.setOrderAmt(1.00);
-
         try {
-           boolean s = XmlUtils.getInstance().validate(bq,"d://test.xsd");
+           boolean s = XmlUtils.getInstance().validate(bq, "/test.xsd");
             System.out.println(s);
         } catch (Exception e) {
             e.printStackTrace();
