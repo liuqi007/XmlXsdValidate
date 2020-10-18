@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+<xs:element name="B2CReq">
+    <xs:complexType>
+      <xs:all>
+		<xs:element name="merId">
+			<xs:simpleType>
+			  <xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="20"/>
+			  </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+ 
+		<xs:element name="orderNo">
+			<xs:simpleType>
+			  <xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="30"/>
+			  </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+ 
+		<xs:element name="orderAmt">
+			<xs:simpleType>
+			  <xs:restriction base="xs:decimal">
+				<xs:pattern value="[\d]{0,16}\.[\d]{2}"/>
+			  </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+
+      </xs:all>
+    </xs:complexType>
+</xs:element>
+ 
+</xs:schema>
